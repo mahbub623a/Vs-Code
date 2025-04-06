@@ -1,0 +1,17 @@
+{
+    "workbench.colorTheme": "Theme Darker",
+    "files.autoSave": "afterDelay",
+    "editor.mouseWheelZoom": true,
+    "editor.fontSize": 18,
+    "terminal.integrated.fontSize": 18,
+    "editor.fontFamily": "cascadia code, Consolas, 'Courier New', monospace",
+    "editor.fontWeight": "500",
+    "editor.stickyScroll.enabled": false,
+    "editor.minimap.enabled": false,
+    "editor.cursorBlinking": "expand",
+    "terminal.integrated.cursorStyle": "line",
+    "workbench.startupEditor": "none",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+}

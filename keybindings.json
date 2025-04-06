@@ -1,0 +1,31 @@
+[
+    // move cursro in editor
+    {"key": "alt+i", "command": "cursorUp", "when": "editorTextFocus"},
+    {"key": "alt+j", "command": "cursorLeft", "when": "editorTextFocus"},
+    {"key": "alt+k", "command": "cursorDown", "when": "editorTextFocus"},
+    {"key": "alt+l", "command": "cursorRight", "when": "editorTextFocus"},
+    {"key": "alt+shift+j", "command": "cursorWordLeftSelect", "when": "textInputFocus"},
+    {"key": "alt+shift+l", "command": "cursorWordRightSelect", "when": "textInputFocus"},
+    {"key": "alt+shift+i", "command": "cursorUpSelect", "when": "textInputFocus"},
+    {"key": "alt+shift+k", "command": "cursorDownSelect", "when": "textInputFocus"},
+    {"key": "alt+;", "command": "cursorEnd", "when": "editorTextFocus"},
+    {"key": "alt+a", "command": "cursorHome", "when": "editorTextFocus"},
+    // {"key": "alt+i", "command": "cursorMove", "args": {"to": "up", "by": "line", "value": 2}, "when": "editorTextFocus"},
+    // {"key": "alt+k", "command": "cursorMove", "args": {"to": "down", "by": "line", "value": 2}, "when": "editorTextFocus"},
+
+    // move cursro in terminal
+    {"key": "alt+i", "command": "workbench.action.terminal.sendSequence", "args": {"text": "\u001b[A"}, "when": "terminalFocus"},
+    {"key": "alt+k", "command": "workbench.action.terminal.sendSequence", "args": {"text": "\u001b[B"}, "when": "terminalFocus"},
+    {"key": "alt+j", "command": "workbench.action.terminal.sendSequence", "args": {"text": "\u001b[D"}, "when": "terminalFocus"},
+    {"key": "alt+l", "command": "workbench.action.terminal.sendSequence", "args": {"text": "\u001b[C"}, "when": "terminalFocus"},
+
+    // Basic Operation
+    {"key": "alt+u", "command": "editor.action.moveLinesUpAction", "when": "textInputFocus"},
+    {"key": "alt+m", "command": "editor.action.moveLinesDownAction", "when": "textInputFocus"},
+    {"key": "alt+o", "command": "scrollLineUp", "when": "editorTextFocus"},
+    {"key": "alt+.", "command": "scrollLineDown", "when": "editorTextFocus"},
+    {"key": "alt+n", "command": "editor.action.copyLinesDownAction", "when": "editorTextFocus"},
+    {"key": "alt+enter", "command": "editor.action.insertLineBefore", "when": "editorTextFocus"},
+    {"key": "alt+d", "command": "editor.action.deleteLines", "when": "editorTextFocus && !editorReadonly"},
+    {"key": "alt+q", "command": "cph.runTestCases"}
+]
