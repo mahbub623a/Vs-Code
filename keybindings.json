@@ -10,8 +10,6 @@
     {"key": "alt+shift+k", "command": "cursorDownSelect", "when": "textInputFocus"},
     {"key": "alt+;", "command": "cursorEnd", "when": "editorTextFocus"},
     {"key": "alt+a", "command": "cursorHome", "when": "editorTextFocus"},
-    // {"key": "alt+i", "command": "cursorMove", "args": {"to": "up", "by": "line", "value": 2}, "when": "editorTextFocus"},
-    // {"key": "alt+k", "command": "cursorMove", "args": {"to": "down", "by": "line", "value": 2}, "when": "editorTextFocus"},
 
     // move cursro in terminal
     {"key": "alt+i", "command": "workbench.action.terminal.sendSequence", "args": {"text": "\u001b[A"}, "when": "terminalFocus"},
@@ -27,5 +25,5 @@
     {"key": "alt+n", "command": "editor.action.copyLinesDownAction", "when": "editorTextFocus"},
     {"key": "alt+enter", "command": "editor.action.insertLineBefore", "when": "editorTextFocus"},
     {"key": "alt+d", "command": "editor.action.deleteLines", "when": "editorTextFocus && !editorReadonly"},
-    {"key": "alt+q", "command": "cph.runTestCases"}
+    {"key": "alt+q", "command": "cph.runTestCases"},
 ]

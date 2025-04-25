@@ -6,7 +6,7 @@
         "description": ""
     },
     "CP template": {
-        "prefix": "Mahbub",
+        "prefix": "Riana",
         "body": [
             "/*",
             "    author  : Mahbub",
@@ -14,14 +14,10 @@
             "*/",
             "#include <bits/stdc++.h>",
             "using namespace std;",
-            "#define int long long",
-            "#define double long double",
             "",
             "void OTC()",
             "{",
             "    ${0:/* code */}",
-            "",
-            "",
             "}",
             "",
             "signed main()",
@@ -87,9 +83,7 @@
     "Find power": {
         "prefix": "power",
         "body": [
-            "template <class T>",
-            "constexpr T power(T a, unsigned long long b, T res = 1)",
-            "{",
+            "int power(int a, unsigned long long b, int res = 1) {",
             "    for (; b != 0; b /= 2, a *= a)",
             "        if (b & 1)",
             "            res *= a;",
@@ -101,23 +95,21 @@
     "Power Modulo": {
         "prefix": "powerModulo",
         "body": [
-            "template <class T>",
-            "constexpr T power(T a, unsigned long long b, T res = 1)",
+            "int power(int a, unsigned long long b, int res = 1, int mod)",
             "{",
-            "    for (; b != 0; b /= 2, a = (a * a) % MOD)",
+            "    a %= mod;",
+            "    for (; b != 0; b /= 2, a = (a * a) % mod)",
             "        if (b & 1)",
-            "            res = (res * a) % MOD;",
+            "            res = (res * a) % mod;",
             "    return res;",
-            "}",
-            ""
+            "}"
         ],
         "description": "Power Modulo"
     },
     "Is power ": {
         "prefix": "isPower",
         "body": [
-            "bool isPower(int n, int x)",
-            "{",
+            "bool isPower(int n, int x) {",
             "    if (x <= 1)",
             "        return n == 1;",
             "    double logResult = log(n) / log(x);",
@@ -129,8 +121,7 @@
     "Sub String Check": {
         "prefix": "subString",
         "body": [
-            "bool subString(string main, string sub)",
-            "{",
+            "bool subString(string main, string sub) {",
             "    if (main.find(sub) != string::npos)",
             "        return true;",
             "    else",
@@ -142,15 +133,12 @@
     "Sum of a Digit": {
         "prefix": "digitSum",
         "body": [
-            "int digitSum(int k)",
-            "{",
+            "int digitSum(int k) {",
             "    int sum = 0;",
-            "    while (k)",
-            "    {",
+            "    while (k) {",
             "        sum += k % 10;",
             "        k /= 10;",
-            "    }",
-            "    return sum;",
+            "    } return sum;",
             "}"
         ],
         "description": "Sum of a Digit"
@@ -158,8 +146,7 @@
     "Find divisors": {
         "prefix": "divisors",
         "body": [
-            "vector<int> divisors(int n)",
-            "{",
+            "vector<int> divisors(int n) {",
             "    vector<int> div;",
             "    for (int i = 1; i * i <= n; i++) {",
             "        if (n % i == 0) {",
@@ -176,8 +163,7 @@
     "Prime check": {
         "prefix": "prime",
         "body": [
-            "bool prime(int n)",
-            "{",
+            "bool prime(int n) {",
             "    for (int i = 2; i * i <= n; i++)",
             "        if (n % i == 0)",
             "            return false;",
@@ -189,8 +175,7 @@
     "Sieve Erathosthenis": {
         "prefix": "sieve",
         "body": [
-            "void sieve(int n)",
-            "{",
+            "void sieve(int n) {",
             "    vector<bool> primes(n+1, true);",
             "    primes[0] = primes[1] = false;",
             "",
@@ -206,8 +191,7 @@
     "Find prime factor": {
         "prefix": "primeFactor",
         "body": [
-            "vector<int> primeFactor(int n)",
-            "{",
+            "vector<int> primeFactor(int n) {",
             "    vector<int> prime;",
             "    for (int i = 2; i * i <= n; i++) {",
             "        while (n % i == 0) {",
