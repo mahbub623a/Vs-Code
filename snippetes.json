@@ -1,12 +1,12 @@
 {
     "Inbuilt Modification": {
         "body": [
-            "-------------------------$Inbuilt_Modification---------------------------"
+            "--------------------------------$Template-------------------------------------"
         ],
         "description": ""
     },
     "CP template": {
-        "prefix": "Riana",
+        "prefix": "Jana",
         "body": [
             "/*",
             "    author  : Mahbub",
@@ -14,6 +14,7 @@
             "*/",
             "#include <bits/stdc++.h>",
             "using namespace std;",
+            "#define int long long",
             "",
             "void OTC()",
             "{",
@@ -29,21 +30,6 @@
             "}"
         ],
         "description": "Competitive programig template"
-    },
-    "C++ template": {
-        "prefix": "cpp",
-        "body": [
-            "#include <bits/stdc++.h>",
-            "using namespace std;",
-            "",
-            "int main()",
-            "{",
-            "\t$0",
-            "",
-            "    return 0;",
-            "}"
-        ],
-        "description": "Competitive programming template"
     },
     "Shortcut": {
         "body": [

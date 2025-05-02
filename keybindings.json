@@ -25,5 +25,5 @@
     {"key": "alt+n", "command": "editor.action.copyLinesDownAction", "when": "editorTextFocus"},
     {"key": "alt+enter", "command": "editor.action.insertLineBefore", "when": "editorTextFocus"},
     {"key": "alt+d", "command": "editor.action.deleteLines", "when": "editorTextFocus && !editorReadonly"},
-    {"key": "alt+q", "command": "cph.runTestCases"},
+    {"key": "alt+q", "command": "cph.runTestCases"}
 ]
