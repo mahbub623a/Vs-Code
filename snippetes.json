@@ -1,7 +1,7 @@
 {
     "Inbuilt Modification": {
         "body": [
-            "--------------------------------$Template-------------------------------------"
+            "-------------------------$Inbuilt_Modification---------------------------"
         ],
         "description": ""
     },
@@ -30,6 +30,21 @@
             "}"
         ],
         "description": "Competitive programig template"
+    },
+    "C++ template": {
+        "prefix": "cpp",
+        "body": [
+            "#include <bits/stdc++.h>",
+            "using namespace std;",
+            "",
+            "int main()",
+            "{",
+            "\t$0",
+            "",
+            "    return 0;",
+            "}"
+        ],
+        "description": "Competitive programming template"
     },
     "Shortcut": {
         "body": [

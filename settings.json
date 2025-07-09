@@ -13,5 +13,11 @@
     "workbench.startupEditor": "none",
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    }
 }
