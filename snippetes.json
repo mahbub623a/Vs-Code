@@ -131,18 +131,18 @@
         ],
         "description": "Sub String Check"
     },
-    "Sum of a Digit": {
+    "Sum of digit": {
         "prefix": "digitSum",
         "body": [
-            "int digitSum(int k) {",
+            "int digitSum(int k)",
+            "{",
             "    int sum = 0;",
-            "    while (k) {",
+            "    for (; k > 0; k /= 10)",
             "        sum += k % 10;",
-            "        k /= 10;",
-            "    } return sum;",
+            "    return sum;",
             "}"
         ],
-        "description": "Sum of a Digit"
+        "description": "Sum of digit"
     },
     "Find divisors": {
         "prefix": "divisors",
@@ -160,6 +160,20 @@
             "}"
         ],
         "description": "Find divisors"
+    },
+    "Count the divisor": {
+        "prefix": "divisroCount",
+        "body": [
+            "void divisorCount(int x) {",
+            "    vector<int> v(x + 1, 0);",
+            "    for (int i = 1; i <= x; i++) {",
+            "        for (int j = i; j <= x; j += i)",
+            "            v[j]++;",
+            "    }",
+            "    cout << v[x] << endl;",
+            "}"
+        ],
+        "description": "Count the divisor"
     },
     "Prime check": {
         "prefix": "prime",
