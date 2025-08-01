@@ -1,11 +1,12 @@
 {
     "workbench.colorTheme": "Theme Darker",
+    "workbench.iconTheme": "material-icon-theme",
     "files.autoSave": "afterDelay",
     "editor.mouseWheelZoom": true,
-    "editor.fontSize": 18,
+    "editor.fontSize": 20,
     "terminal.integrated.fontSize": 18,
     "editor.fontFamily": "cascadia code, Consolas, 'Courier New', monospace",
-    "editor.fontWeight": "500",
+    "editor.fontWeight": "bold",
     "editor.stickyScroll.enabled": false,
     "editor.minimap.enabled": false,
     "editor.cursorBlinking": "expand",
@@ -19,5 +20,6 @@
         "plaintext": false,
         "markdown": false,
         "scminput": false
-    }
+    },
+    "workbench.secondarySideBar.defaultVisibility": "hidden"
 }
