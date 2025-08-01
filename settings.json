@@ -1,6 +1,5 @@
 {
     "workbench.colorTheme": "Theme Darker",
-    "workbench.iconTheme": "material-icon-theme",
     "files.autoSave": "afterDelay",
     "editor.mouseWheelZoom": true,
     "editor.fontSize": 20,
@@ -21,5 +20,7 @@
         "markdown": false,
         "scminput": false
     },
-    "workbench.secondarySideBar.defaultVisibility": "hidden"
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "editor.formatOnPaste": true
 }

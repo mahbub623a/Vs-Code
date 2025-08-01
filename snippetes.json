@@ -71,7 +71,9 @@
             "// String uppercae                      -> transform(str.begin(),str.end(), str.begin(), ::toupper);",
             "// String lowercase                     -> transform(str.begin(),str.end(), str.begin(), ::tolower);",
             "// Find substring's index forword       -> find(\"abc\")",
-            "// Find substring's index backword      -> rfind(\"abc\")"
+            "// Find substring's index backword      -> rfind(\"abc\")",
+            "ceil(a/b) = (a+b-1)/b",
+            "floor(a/b) = a/b"
         ],
         "description": "Documentation"
     },
@@ -162,7 +164,7 @@
         "description": "Find divisors"
     },
     "Count the divisor": {
-        "prefix": "divisroCount",
+        "prefix": "divisorCount",
         "body": [
             "void divisorCount(int x) {",
             "    vector<int> v(x + 1, 0);",
@@ -220,5 +222,57 @@
             "}"
         ],
         "description": "Find prime factor"
+    },
+    "Binary Search": {
+        "prefix": "binary",
+        "body": [
+            "int binary(vector<int> v, int t) {",
+            "    int l = 0,",
+            "        r = v.size() - 1;",
+            "",
+            "    while (l <= r) {",
+            "        int i = l + (r - l) / 2;",
+            "        if (t == v[i]) return i;",
+            "        else if (v[i] < t) l = i + 1;",
+            "        else r = i - 1;",
+            "    }",
+            "    return -1;",
+            "}"
+        ],
+        "description": "Standard binary search"
+    },
+    "Binary Search Last Occurrence": {
+        "prefix": "binaryLast",
+        "body": [
+            "int binaryLast(vector<int> v, int t) {",
+            "    int l = 0,",
+            "        r = v.size() - 1;",
+            "",
+            "    while (l < r) {",
+            "        int i = l + (r - l + 1) / 2; // ceil",
+            "        if (v[i] <= t) l = i;",
+            "        else r = i - 1;",
+            "    }",
+            "    return (v[l] == t ? l : -1);",
+            "}"
+        ],
+        "description": "Binary search - last index of target"
+    },
+    "Binary Search First Occurrence": {
+        "prefix": "binaryFirst",
+        "body": [
+            "int binaryFirst(vector<int> v, int t) {",
+            "    int l = 0,",
+            "        r = v.size() - 1;",
+            "",
+            "    while (l < r) {",
+            "        int i = l + (r - l) / 2; // floor",
+            "        if (v[i] >= t) r = i;",
+            "        else l = i + 1;",
+            "    }",
+            "    return (v[l] == t ? l : -1);",
+            "}"
+        ],
+        "description": "Binary search - first index of target"
     }
 }
