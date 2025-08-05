@@ -1,0 +1,81 @@
+# espanso match file
+
+# For a complete introduction, visit the official docs at: https://espanso.org/docs/
+
+# You can use this file to define the base matches (aka snippets)
+# that will be available in every application when using espanso.
+
+# Matches are substitution rules: when you type the "trigger" string
+# it gets replaced by the "replace" string.
+matches:
+  # Simple text replacement
+  - trigger: ":espanso"
+    replace: "Hi there!"
+
+  # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
+
+  # But matches can also be dynamic:
+
+  # Print the current date
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%m/%d/%Y"
+
+  # Print the output of a shell command
+  - trigger: ":shell"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo 'Hello from your shell'"
+
+  # And much more! For more information, visit the docs: https://espanso.org/docs/
+
+  # Personal info
+  - trigger: ":name"
+    replace: "Md. Mahbubur Rahman"
+
+  - trigger: ":gp"
+    replace: "01744177620"
+
+  - trigger: ":teletalk"
+    replace: "01511177620"
+
+  - trigger: ":id"
+    replace: "011221441"
+
+
+  # email
+  - trigger: ":vmail"
+    replace: "mrahman221441@bscse.uiu.ac.bd"
+
+  - trigger: ":mmail"
+    replace: "mrahman623a@gmail.com"
+
+  - trigger: ":umail"
+    replace: "maahbub620@gmail.com"
+
+  - trigger: ":bmail"
+    replace: "www.mahbubr@gmail.com"
+
+
+  #emoji
+  - trigger: ";l"
+    replace: "😂😂"
+  - trigger: ";c"
+    replace: "🥹🥹"
+  - trigger: ";C"
+    replace: "🙂🙂"
+  - trigger: ";s"
+    replace: "😔😔"
+  - trigger: ";h"
+    replace: "❤️❤️"
+  - trigger: ";k"
+    replace: "😘😘"
+  - trigger: ";K"
+    replace: "🦶🦶"
