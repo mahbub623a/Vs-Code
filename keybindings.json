@@ -10,8 +10,10 @@
     {"key": "alt+shift+k", "command": "cursorDownSelect", "when": "textInputFocus"},
     {"key": "alt+;", "command": "cursorEnd", "when": "editorTextFocus"},
     {"key": "alt+h", "command": "cursorHome", "when": "editorTextFocus"},
+    {"key": "alt+k","command": "selectNextSuggestion","when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible"},
+    {"key": "alt+i","command": "selectPrevSuggestion","when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible"},
 
-    // move cursro in terminal
+    // move cursors in terminal
     {"key": "alt+i", "command": "workbench.action.terminal.sendSequence", "args": {"text": "\u001b[A"}, "when": "terminalFocus"},
     {"key": "alt+k", "command": "workbench.action.terminal.sendSequence", "args": {"text": "\u001b[B"}, "when": "terminalFocus"},
     {"key": "alt+j", "command": "workbench.action.terminal.sendSequence", "args": {"text": "\u001b[D"}, "when": "terminalFocus"},
