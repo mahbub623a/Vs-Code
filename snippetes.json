@@ -72,8 +72,9 @@
             "// String lowercase                     -> transform(str.begin(),str.end(), str.begin(), ::tolower);",
             "// Find substring's index forword       -> find(\"abc\")",
             "// Find substring's index backword      -> rfind(\"abc\")",
-            "ceil(a/b) = (a+b-1)/b",
-            "floor(a/b) = a/b"
+            "// ceil(a/b) = (a+b-1)/b",
+            "// floor(a/b) = a/b",
+            "// Insert into string anywhere          -> str.insert(str.begin(), 'a');"
         ],
         "description": "Documentation"
     },
