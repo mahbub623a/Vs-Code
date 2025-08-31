@@ -40,31 +40,43 @@ matches:
   - trigger: ":name"
     replace: "Md. Mahbubur Rahman"
 
-  - trigger: ":gp"
-    replace: "01744177620"
-
-  - trigger: ":teletalk"
-    replace: "01511177620"
-
   - trigger: ":id"
     replace: "011221441"
 
+  - trigger: ":uiu"
+    replace: "United International University"
+
+  - trigger: ":gp"
+    replace: "01744177620"
+
+  - trigger: ":tt"
+    replace: "01511177620"
+
+
 
   # email
-  - trigger: ":vmail"
+  - trigger: ":vm"
     replace: "mrahman221441@bscse.uiu.ac.bd"
 
-  - trigger: ":mmail"
+  - trigger: ":mm"
     replace: "mrahman623a@gmail.com"
 
-  - trigger: ":umail"
+  - trigger: ":um"
     replace: "maahbub620@gmail.com"
 
-  - trigger: ":bmail"
+  - trigger: ":bm"
     replace: "www.mahbubr@gmail.com"
 
 
-  #emoji
+  # Handle
+  - trigger: ":cf"
+    replace: "TribalLiege"
+
+  - trigger: ":cp"
+    replace: "mahbub620"
+
+
+  # emoji
   - trigger: ";l"
     replace: "😂😂"
   - trigger: ";c"
@@ -75,7 +87,39 @@ matches:
     replace: "😔😔"
   - trigger: ";h"
     replace: "❤️❤️"
+  - trigger: ";b"
+    replace: "💔💔"
   - trigger: ";k"
     replace: "😘😘"
   - trigger: ";K"
     replace: "🦶🦶"
+  - trigger: ";y"
+    replace: "😋😋"
+  - trigger: ";t"
+    replace: "🤤🤤"
+
+  # Random
+  - trigger: ":meet"
+    replace: "https://meet.google.com/zmv-veru-axj"
+
+  - trigger: ":ria"
+    replace: "https://meet.google.com/ehy-zysm-zeh"
+
+  # Git bash
+  - trigger: ".s"
+    replace: "git status"
+
+  - trigger: ".b"
+    replace: "git branch"
+
+  - trigger: ".a"
+    replace: "git add ."
+
+  - trigger: ".c"
+    replace: 'git commit -m "$|$"'
+
+  - trigger: ".o"
+    replace: "git checkout "
+
+  - trigger: ".p"
+    replace: "git push"
