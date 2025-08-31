@@ -110,10 +110,13 @@ matches:
     replace: "git status"
 
   - trigger: ".b"
-    replace: "git branch "
+    replace: "git branch"
 
   - trigger: ".c"
     replace: 'git ac "$|$"'
+
+  - trigger: ".a"
+    replace: 'git acp "$|$"'
 
   - trigger: ".o"
     replace: "git checkout "
@@ -121,5 +124,5 @@ matches:
   - trigger: ".p"
     replace: "git push"
 
-  - trigger: "."
-    replace: "git merge "
+  - trigger: ".m"
+    replace: "git merge"
