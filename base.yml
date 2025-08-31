@@ -110,16 +110,16 @@ matches:
     replace: "git status"
 
   - trigger: ".b"
-    replace: "git branch"
-
-  - trigger: ".a"
-    replace: "git add ."
+    replace: "git branch "
 
   - trigger: ".c"
-    replace: 'git commit -m "$|$"'
+    replace: 'git ac "$|$"'
 
   - trigger: ".o"
     replace: "git checkout "
 
   - trigger: ".p"
     replace: "git push"
+
+  - trigger: "."
+    replace: "git merge "
