@@ -124,5 +124,8 @@ matches:
   - trigger: ".p"
     replace: "git push"
 
+  - trigger: ".l"
+    replace: "git pull"
+
   - trigger: ".m"
     replace: "git merge"
