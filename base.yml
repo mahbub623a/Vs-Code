@@ -8,7 +8,7 @@ matches:
         type: date
         params:
           format: "%m/%d/%Y"
-          
+
   # Personal info
   - trigger: ":name"
     replace: "Md. Mahbubur Rahman"
@@ -79,26 +79,26 @@ matches:
     replace: "https://meet.google.com/ehy-zysm-zeh"
 
   # Git bash
-  - trigger: ".s"
+  - trigger: ",s"
     replace: "git status"
 
-  - trigger: ".b"
+  - trigger: ",b"
     replace: "git branch"
 
-  - trigger: ".c"
+  - trigger: ",c"
     replace: 'git ac "$|$"'
 
-  - trigger: ".a"
+  - trigger: ",a"
     replace: 'git acp "$|$"'
 
-  - trigger: ".o"
+  - trigger: ",o"
     replace: "git checkout "
 
-  - trigger: ".p"
-    replace: "git push"
+  - trigger: ",p"
+    replace: "git push -u origin"
 
-  - trigger: ".l"
+  - trigger: ",l"
     replace: "git pull"
 
-  - trigger: ".m"
+  - trigger: ",m"
     replace: "git merge"
