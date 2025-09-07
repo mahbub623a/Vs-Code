@@ -95,7 +95,7 @@ matches:
     replace: "git checkout "
 
   - trigger: ",p"
-    replace: "git push -u origin"
+    replace: "git push "
 
   - trigger: ",l"
     replace: "git pull"
