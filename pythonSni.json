@@ -1,0 +1,19 @@
+{
+    "Python template": {
+        "prefix": "Jana",
+        "body": [
+            "import sys",
+            "import math",
+            "input = sys.stdin.readline # use strip()",
+            "",
+            "def solve():",
+            "    $0",
+            "",
+            "${1:t = int(input())",
+            "for _ in range(t):",
+            "    }solve()",
+            ""
+        ],
+        "description": "Python template"
+    }
+}

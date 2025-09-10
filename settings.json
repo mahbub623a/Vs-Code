@@ -3,8 +3,8 @@
     "editor.mouseWheelZoom": true,
     "editor.fontSize": 18,
     "terminal.integrated.fontSize": 18,
-    // "editor.fontFamily": "cascadia code, Consolas, 'Courier New', monospace",
-    "editor.fontWeight": "bold",
+    "editor.fontFamily": "cascadia code, Consolas, 'Courier New', monospace",
+    "editor.fontWeight": "900",
     "editor.stickyScroll.enabled": false,
     "editor.minimap.enabled": false,
     "editor.cursorBlinking": "expand",
@@ -22,7 +22,6 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.secondarySideBar.defaultVisibility": "hidden",
     "editor.formatOnPaste": true,
-    "editor.wordWrap": "on",
     "workbench.colorTheme": "Theme Darker",
     "editor.cursorSmoothCaretAnimation": "on"
 }
