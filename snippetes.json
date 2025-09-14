@@ -17,7 +17,6 @@
             "#define int long long",
             "#define int long long",
             "#define print(x) cerr << #x << \" = \" << x << endl",
-            "#define print2(x, y) cerr << #x << \" = \" << x << \", \" << #y << \" = \" << y << endl",
             "",
             "void OTC()",
             "{",
