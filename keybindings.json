@@ -30,8 +30,4 @@
     {"key": "alt+d", "command": "editor.action.deleteLines", "when": "editorTextFocus && !editorReadonly"},
     {"key": "alt+f","command": "workbench.action.nextEditor"},
     { "key": "alt+a", "command": "workbench.action.previousEditor" },
-    { "key": "alt+t", "command": "codeforces.testSolution" },
-    { "key": "ctrl+alt+b", "command": "-codeforces.testSolution" },
-    { "key": "alt+s", "command": "codeforces.submitSolution" },
-    { "key": "ctrl+alt+s", "command": "-codeforces.submitSolution" },
 ]
