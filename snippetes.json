@@ -16,7 +16,7 @@
             "using namespace std;",
             "#define int long long",
             "#define int long long",
-            "#define print(x, y) cerr << #x << \" = \" << x << \" \" << #y << \" = \" << y << endl",
+            "#define print(x,y) printf(#x\"=%d \"#y\"=%d\\n\",x,y)",
             "",
             "void OTC()",
             "{",
