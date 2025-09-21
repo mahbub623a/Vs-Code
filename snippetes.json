@@ -14,9 +14,11 @@
             "*/",
             "#include <bits/stdc++.h>",
             "using namespace std;",
-            "#define int long long",
-            "#define int long long",
-            "#define print(x,y) printf(#x\"=%d \"#y\"=%d\\n\",x,y)",
+            "#define int long long int",
+            "",
+            "#ifdef LOCAL",
+            "#include \"debug.h\"",
+            "#endif",
             "",
             "void OTC()",
             "{",
@@ -58,7 +60,7 @@
         "prefix": "inpOut",
         "body": [
             "#ifndef ONLINE_JUDGE",
-            "    freopen(\"InpOut/input.txtt\", \"r\", stdin);",
+            "    freopen(\"InpOut/input.txt\", \"r\", stdin);",
             "    freopen(\"InpOut/output.txt\", \"w\", stdout);",
             "#endif"
         ],

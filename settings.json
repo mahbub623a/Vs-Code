@@ -23,5 +23,6 @@
     "workbench.secondarySideBar.defaultVisibility": "hidden",
     "editor.formatOnPaste": true,
     "workbench.colorTheme": "Theme Darker",
-    "editor.cursorSmoothCaretAnimation": "on"
+    "editor.cursorSmoothCaretAnimation": "on",
+    "cph.language.cpp.Args": "-std=c++23 -DLOCAL",
 }
