@@ -6,8 +6,10 @@ using namespace std;
 
 #ifdef LOCAL   // Enable debug only if compiled with -DLOCAL
 #define print(...) print_out(#__VA_ARGS__, __VA_ARGS__)
+#define _print(arr) _print_out(#arr, arr)
 #else
 #define print(...) 42
+#define _print(arr) 42
 #endif
 
 // Forward declaration
@@ -55,13 +57,24 @@ template <typename T>
 string to_string_debug(const T& value) {
     if constexpr (is_same<T, string>::value) {
         return "\"" + value + "\"";
-    } else if constexpr (is_arithmetic<T>::value) {
-        return std::to_string(value);
     } else if constexpr (is_same<T, char>::value) {
         return string(1, value);
+    } else if constexpr (is_arithmetic<T>::value) {
+        return std::to_string(value);
     } else {
         return range_to_string(value); // assume iterable
     }
+}
+
+// ---------- _print for arrays ----------
+template <typename T, size_t N>
+void _print_out(const char* name, const T (&arr)[N]) {
+    cerr << name << " = {";
+    for (size_t i = 0; i < N; i++) {
+        if (i) cerr << ", ";
+        cerr << to_string_debug(arr[i]);
+    }
+    cerr << "}\n";
 }
 
 // ---------- Base case ----------
