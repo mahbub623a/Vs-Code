@@ -6,10 +6,8 @@ using namespace std;
 
 #ifdef LOCAL   // Enable debug only if compiled with -DLOCAL
 #define print(...) print_out(#__VA_ARGS__, __VA_ARGS__)
-#define _print(arr) _print_out(#arr, arr)
 #else
 #define print(...) 42
-#define _print(arr) 42
 #endif
 
 // Forward declaration
@@ -66,9 +64,9 @@ string to_string_debug(const T& value) {
     }
 }
 
-// ---------- _print for arrays ----------
+// ---------- Array case for print(...) ----------
 template <typename T, size_t N>
-void _print_out(const char* name, const T (&arr)[N]) {
+void print_out(const char* name, const T (&arr)[N]) {
     cerr << name << " = {";
     for (size_t i = 0; i < N; i++) {
         if (i) cerr << ", ";
